@@ -1,0 +1,26 @@
+# Créer le fichier .gitignore
+cat > .gitignore << EOL
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+migration-errors.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+EOL
+/src/generated/prisma

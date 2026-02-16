@@ -1,0 +1,36 @@
+{
+  "name": "mongodb-to-postgres-migration",
+  "version": "1.0.0",
+  "description": "Script de migration de MongoDB vers PostgreSQL avec TypeORM",
+  "main": "dist/migrate.js",
+  "scripts": {
+    "migrate": "ts-node src/migrate.ts",
+    "migrate:dry-run": "ts-node src/migrate.ts --dry-run",
+    "build": "tsc",
+    "start": "node dist/migrate.js",
+    "validate": "ts-node src/validate.ts",
+    "verify": "ts-node src/verify.ts",
+    "test": "ts-node src/test.ts"
+  },
+  "keywords": [
+    "migration",
+    "mongodb",
+    "postgresql",
+    "typeorm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "mongodb": "^6.21.0",
+    "pg": "^8.18.0",
+    "typeorm": "^0.3.28"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "@types/pg": "^8.16.0",
+    "prisma": "^7.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
