@@ -107,12 +107,12 @@ mongodb-to-postgres-migration/
 PG_HOST=localhost
 PG_PORT=5432
 PG_USER=postgres
-PG_PASSWORD=0000
-PG_DATABASE=mongotopost
+PG_PASSWORD=TonPassword
+PG_DATABASE=mongotopost(exemple)
 
 # MongoDB Configuration
 MONGODB_URI=mongodb://localhost:27017
-MONGODB_DB=ecommerce
+MONGODB_DB=ecommerce(exemple)
 ```
 
 ### 2. Créer la base de données PostgreSQL
